@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Координата Quest — Векторлар ойыны</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">МАТЕМАТИКАЛЫҚ КВЕСТ</p>
+        <h1>Координата Quest</h1>
+        <p>Жазықтықтағы және кеңістіктегі координаталар мен векторлар бойынша 10 деңгейден өт!</p>
+      </div>
+      <button id="startBtn" class="primary">Ойынды бастау</button>
+    </header>
+
+    <section class="hud">
+      <div><span>Ұпай</span><strong id="score">0</strong></div>
+      <div><span>Деңгей</span><strong id="level">1/10</strong></div>
+      <div><span>Уақыт</span><strong id="timer">60</strong></div>
+      <div><span>Жүрек</span><strong id="lives">❤️❤️❤️</strong></div>
+    </section>
+
+    <section id="game" class="card hidden">
+      <div class="progress"><div id="progressBar"></div></div>
+      <div class="question-meta">
+        <span id="topicBadge">Жазықтық</span>
+        <span id="feedback"></span>
+      </div>
+      <h2 id="question">Сұрақ</h2>
+      <div id="visual" class="visual"></div>
+      <div id="answers" class="answers"></div>
+      <button id="nextBtn" class="secondary hidden">Келесі →</button>
+    </section>
+
+    <section id="intro" class="card intro">
+      <h2>Қалай ойнаймыз?</h2>
+      <ol>
+        <li>«Ойынды бастау» батырмасын бас.</li>
+        <li>Әр деңгейде дұрыс жауапты таңда.</li>
+        <li>Дұрыс жауап — <b>+100</b>, жылдам жауап — қосымша бонус.</li>
+        <li>3 қате жауаптан кейін ойын аяқталады.</li>
+      </ol>
+      <div class="topics">
+        <span>📍 Oxy координаталары</span>
+        <span>🧭 Векторлар</span>
+        <span>🧊 3D кеңістік</span>
+        <span>⚡ Вектор ұзындығы</span>
+      </div>
+    </section>
+
+    <section id="result" class="card result hidden">
+      <div class="trophy">🏆</div>
+      <h2 id="resultTitle">Жарайсың!</h2>
+      <p id="resultText"></p>
+      <button id="restartBtn" class="primary">Қайта ойнау</button>
+    </section>
+
+    <footer>
+      <span>Координата Quest</span>
+      <span>GitHub Pages-ке дайын</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
